@@ -10,7 +10,6 @@ if [ $ret -eq 0 ]; then
 
 else
 
-  #  sudo shutdown -h now
-  echo 'AC Power Error !'
-
+  sudo shutdown -h now
+#  echo 'AC Power Error !'
 fi
