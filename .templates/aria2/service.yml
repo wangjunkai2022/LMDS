@@ -1,15 +1,15 @@
-aria2:
-  container_name: aria2
-  image: p3terx/aria2-pro
-  environment:
-    - PUID=65534
-    - PGID=65534
-    - UMASK_SET=022
-  volumes:
-    - ./volumes/aria2/config:/config
-    - ./downloads:/downloads
-  ports:
-    - 6800:6800
-    - 6888:6888
-    - 6888:6888/udp
-  restart: always
+  aria2:
+    container_name: aria2
+    image: p3terx/aria2-pro
+    environment:
+      - PUID=65534
+      - PGID=65534
+      - UMASK_SET=022
+    volumes:
+      - ./volumes/aria2/config:/config
+      - ./downloads:/downloads
+    ports:
+      - 6800:6800
+      - 6888:6888
+      - 6888:6888/udp
+    restart: always
